@@ -1,0 +1,84 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.status-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    font-size: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.tab.active {
+    background-color: #ff7043;
+    color: white !important;
+}
+.status .item-test 
+{
+    font-size: 10px;
+    font-weight: 600;
+    
+}
+.date-picker {
+    display: flex;
+    align-items: center;
+}
+
+.date-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    border-bottom: 2px solid gray;
+}
+.date-item span{
+   font-size: 15px;
+   
+}
+i{
+    color: #ff7043;
+    font-size: 12px;
+}
+
+.status-item .fa-circle
+{
+font-size: 5px;
+padding: 5px;
+margin-top: 10px;
+
+}
+

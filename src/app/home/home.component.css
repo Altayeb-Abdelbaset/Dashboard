@@ -1,0 +1,159 @@
+
+a , ul , li{
+    text-decoration: 0;
+    list-style: none;
+}
+
+.navbar .nav-item{
+    font-weight: 700;
+    font-size: small;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card .card-body {
+    padding: 1rem;
+}
+.card .active
+{
+    background-color: #e9d7d0;
+    border-radius: 15px;
+}
+.badge-info {
+    background-color: #ff7f50;
+}
+.colo
+{
+  color: #ff7f50;
+  margin: 0;
+}
+.colo1
+{
+    color: rgb(0, 212, 219);
+    margin: 0;
+}
+
+.card-text 
+{
+    font-size: 11px;
+    font-weight: 600;
+}
+.item-card
+{
+    background-color: transparent !;
+    box-shadow: none !important;
+ 
+}
+
+
+.card .card-header
+{
+    background-color: white;
+    border: 0;
+   
+}
+.hove
+{
+    color: #ff7f50;
+    border-bottom: 3px solid #ff7f50;
+
+}
+.nav-link
+{
+    padding: 0 !important;
+}
+.card-body ul{
+    margin: auto !important;
+}
+
+
+
+.main-bg {
+    background-color: #ff7f50;
+}
+ .progress, .progress-bar {
+    height: 3px;
+}
+
+.progress
+{
+    width: 60%;
+   ;
+}
+
+
+.tab {
+    font-size: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+.tab.active {
+    background-color: #ff7043;
+    color: white !important;
+}
+
+.slider i{
+    color: #ff7043;
+    font-size: 12px;
+}
+
+.slider .fa-circle
+{
+font-size: 5px;
+padding: 5px;
+margin-top: 10px;
+
+}
+
+.slider
+{
+    border-radius: 1px solid gray;
+}
+
+
+
+
+.station-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+.station-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c0c0c0d0;
+}
+.station-icon {
+    font-size: 2rem;
+    color: #ff7043;
+}
+.station-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.station-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.detail {
+ color: #525252;  
+ display: inline;
+ font-size: 10px;
+}
+.detail span {
+    font-weight: bold;
+}
+
