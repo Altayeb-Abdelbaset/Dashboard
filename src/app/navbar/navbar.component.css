@@ -1,12 +1,12 @@
 .sidebar {
     width: 80px !important;
     height: 100vh;
-    background-color: #ff7043;
+    background-color:  #ff7f50;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    border-radius: 0 10px 10px 0px;
+    border-radius: 0 20px 20px 0px;
     z-index: 9999;
 }
 

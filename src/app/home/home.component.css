@@ -21,6 +21,10 @@ a , ul , li{
     background-color: #e9d7d0;
     border-radius: 15px;
 }
+.header
+{
+color: #5c5e6d;
+}
 .badge-info {
     background-color: #ff7f50;
 }
@@ -46,7 +50,13 @@ a , ul , li{
     box-shadow: none !important;
  
 }
-
+.btns
+{
+    background-color: #f8f8f8;
+    width: auto;
+    border-radius: 25px;    
+    padding: 0;
+}
 
 .card .card-header
 {
@@ -157,3 +167,45 @@ margin-top: 10px;
     font-weight: bold;
 }
 
+
+.example-viewport {
+    height:400px;
+    padding: 13px;
+  }
+
+  .scroll-container { 
+    height: 400px; 
+    overflow-y: scroll; 
+    padding: 15px;
+   
+} 
+
+.scroll-container::-webkit-scrollbar { 
+    width: 3px; 
+} 
+
+.scroll-container::-webkit-scrollbar-track { 
+    background: rgb(241, 224, 221); 
+    border-radius: 10px;
+
+} 
+
+.scroll-container::-webkit-scrollbar-thumb { 
+    background: #ff7043 ; 
+    border-radius: 10px;
+
+} 
+
+
+.scroll-container::-webkit-scrollbar-button { 
+    display: none; 
+} 
+
+
+
+
+
+
+
+
+  

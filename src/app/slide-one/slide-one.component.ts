@@ -21,7 +21,7 @@ export class SlideOneComponent {
         data: {
           labels: ['Station 1', 'Station 2', 'Station 3', 'Station 4', 'Station 5', 'Station 6'],
           datasets: [{
-            label:'Sales',
+            label:'',
             data: [300, 50, 100, 70,150,100],
             backgroundColor: '#ff7f50',
             borderWidth: 1,

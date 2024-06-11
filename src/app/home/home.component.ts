@@ -1,5 +1,4 @@
 
-
 import { Component, ViewChild, ElementRef, AfterViewInit, Renderer2, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
 
@@ -24,57 +23,75 @@ export class HomeComponent {
 
   }
 
-  @ViewChild('hourlySalesChart') hourlySalesChartRef!: ElementRef;
 
-
-  hourlySalesChart: Chart | undefined;
-
-  ngAfterViewInit() {
-    console.log('ngAfterViewInit called');
-
-
-    this.hourlySalesChart = new Chart(this.hourlySalesChartRef.nativeElement, {
-      type: 'radar',
-      data: {
-        labels: ['0:00', '2:00', '4:00', '6:00', '8:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00', '22:00'],
-        datasets: [{
-          label: 'Hourly Sales',
-          data: [20, 10, 4, 2, 20, 30, 40, 35, 30, 20, 10, 5],
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          borderWidth: 1
-        }]
+    @ViewChild('radarChart') radarChart!: ElementRef;
+  
+    chart: any;
+  
+    data = {
+      labels: ['10:00', '12:00', '14:00', '16:00', '18:00', '20:00', '22:00', '02:00', '04:00', '06:00', '08:00'],
+      datasets: [{
+        label: '',
+        data: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110],
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+      }, {
+         
+        label: '',
+        data: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+      }]
+    };
+  
+    options = {
+      title: {
+        display: true,
+        text: 'Radar Chart'
       },
-      options: {
-        scales: {
-          r: {
-            angleLines: {
-              display: false
-            },
-            suggestedMin: 0,
-            suggestedMax: 50
-          }
+      scale: {
+        ticks: {
+          beginAtZero: true
         }
       }
-    });
-  }
+    };
+  
+    ngAfterViewInit() {
+      this.chart = new Chart(this.radarChart.nativeElement, {
+        type: 'radar',
+        data: this.data,
+        
+      });
+    }
+  
+
+
+
+
+
+
+
+
 
   constructor(private renderer: Renderer2) { 
     
   }
   setActiveButton(buttonNumber: number, buttonElement: ElementRef): void {
     // Remove the active class from the previous button
-    if (this.previousButton) {
+    if (this.previousButton ) {
       this.renderer.removeClass(this.previousButton, 'active');
     }
-
+    
     // Add the active class to the clicked button
     this.renderer.addClass(buttonElement, 'active');
-
+   
     // Update the active button and store the current button as previous button
     this.activeButton = buttonNumber;
     this.previousButton = buttonElement;
   }
+  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
 }
 
 

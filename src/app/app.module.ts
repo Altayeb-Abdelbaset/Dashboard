@@ -8,7 +8,7 @@ import { HeadbarComponent } from './headbar/headbar.component';
 import { HomeComponent } from './home/home.component';
 import { SlideOneComponent } from './slide-one/slide-one.component';
 import { SlidetwoComponent } from './slidetwo/slidetwo.component';
-
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { SlidetwoComponent } from './slidetwo/slidetwo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ScrollingModule
     
   ],
   providers: [

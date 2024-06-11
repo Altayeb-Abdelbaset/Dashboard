@@ -32,14 +32,16 @@
 .tabs {
     display: flex;
     align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 20px;
 }
 
 .tab {
     font-size: 10px;
-    background-color: #f8f8f8;
     border: none;
-    padding: 5px 25px;
+    background-color: #f8f8f8;
     border-radius: 20px;
+    padding: 5px 25px;
     cursor: pointer;
     color: #333;
 }
